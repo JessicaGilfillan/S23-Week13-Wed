@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ---------- MASONRY LAYOUT WITH GRID ---------------- */
+
+.masonry div > img {
+    max-width: 400px; 
+    height: auto; 
+}
+
+.masonry {
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry; 
+    gap: 1rem; 
+}
+
+/* super cool, right? Except, support is not great yet. In fact, the only browser in which we can see this is Firefox with a experimental features flag set */
+
+/* ---------- :IS() SELECTOR ---------------- */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    font-family: 'Bebas Neue', cursive; 
+    color: #CC5500; 
+}
+
+.wrapper :is(h1,h2,h3, h4, h5, h6) {
+    font-family: 'Bebas Neue', cursive; 
+    color: #CC5500;
+}
+
+/* ---------- UPDATED TEXT DECORATION CONTROL  ---------------- */
+
+.link {
+    color: #333; 
+    text-decoration-color: pink; 
+    text-decoration-thickness: 0.5rem;
+    text-decoration-skip:spaces;
+}
+
+/* ---------- SMOOTH SCROLL ---------------- */
+
+@media (prefers-reduced-motion:no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
