@@ -1,0 +1,33 @@
+main {
+    border: 1px solid #ccc; 
+    border-radius: 2px;
+    padding: 3em; 
+}
+
+header {
+    padding: 2em 0;
+}
+
+.form-control {
+    padding-bottom: 1em;
+}
+
+label {
+    padding: 0.5em 0;
+}
+
+button[type="submit"] {
+    margin: 1em 0;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+@media screen and (min-width: 40em) {
+    button[type="submit"] {
+        max-width: 300px;
+        display:block; 
+        margin-left:auto; 
+        margin-right: auto;
+        margin-top: 2em;  
+    }
+}
